@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor JSON a YAML / YAML a JSON</title>
+    <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1>Conversor JSON a YAML / YAML a JSON</h1>
+    <div class="container">
+        <div class="column">
+            <h3>Entrada (JSON o YAML)</h3>
+            <textarea id="inputArea" placeholder="Introduce JSON o YAML aquí..."></textarea>
+        </div>
+        <div class="column">
+            <button id="convertToYAML">Convertir a YAML</button>
+            <br>
+            <button id="convertToJSON">Convertir a JSON</button>
+        </div>
+        <div class="column">
+            <h3>Resultado</h3>
+            <textarea id="outputArea" placeholder="Resultado aquí..."></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
