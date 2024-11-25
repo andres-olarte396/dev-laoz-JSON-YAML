@@ -1,30 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conversor JSON a YAML / YAML a JSON</title>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-    <h1>Conversor JSON a YAML / YAML a JSON</h1>
-    <div class="container">
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/theme.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/base.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/components.css" />
+    <link
+      rel="icon"
+      href="../dev-laoz-WaveArtCSS/assets/favicons/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Conversor JSON a YAML / YAML a JSON</h1>
+      <p>Convierte JSON a YAML o YAML a JSON en tiempo real.</p>
+    </header>
+    <main>
+      <div class="container">
         <div class="column">
-            <h3>Entrada (JSON o YAML)</h3>
-            <textarea id="inputArea" placeholder="Introduce JSON o YAML aquí..."></textarea>
+          <h3>Entrada (JSON o YAML)</h3>
+          <textarea
+            id="inputArea"
+            placeholder="Introduce JSON o YAML aquí..."
+          ></textarea>
         </div>
         <div class="column">
-            <button id="convertToYAML">Convertir a YAML</button>
-            <br>
-            <button id="convertToJSON">Convertir a JSON</button>
+          <button id="convertToYAML">Convertir a YAML</button>
+          <br />
+          <button id="convertToJSON">Convertir a JSON</button>
         </div>
         <div class="column">
-            <h3>Resultado</h3>
-            <textarea id="outputArea" placeholder="Resultado aquí..."></textarea>
+          <h3>Resultado</h3>
+          <textarea id="outputArea" placeholder="Resultado aquí..."></textarea>
         </div>
-    </div>
-
+      </div>
+    </main> 
+    <footer>
+      <p>© 2024 Mi Negocio. Todos los derechos reservados.</p>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
