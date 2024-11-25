@@ -41,6 +41,7 @@ Este proyecto es una herramienta web que permite convertir de JSON a YAML y de Y
         }
     }
     ```
+
 - **Salida (YAML):**
 
     ```yaml
