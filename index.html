@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conversor JSON a YAML / YAML a JSON</title>
     <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
-    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/theme.css" />
     <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/base.css" />
     <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/components.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/utilities.css" />
     <link
       rel="icon"
       href="../dev-laoz-WaveArtCSS/assets/favicons/favicon.png"
@@ -18,30 +18,37 @@
   <body>
     <header>
       <h1>Conversor JSON a YAML / YAML a JSON</h1>
-      <p>Convierte JSON a YAML o YAML a JSON en tiempo real.</p>
     </header>
     <main>
       <div class="container">
-        <div class="column">
-          <h3>Entrada (JSON o YAML)</h3>
-          <textarea
-            id="inputArea"
-            placeholder="Introduce JSON o YAML aquí..."
-          ></textarea>
-        </div>
-        <div class="column">
+        <fieldset>
+          <legend>Conversor JSON a YAML / YAML a JSON</legend>
+          <p>
+            Este conversor permite convertir JSON a YAML o YAML a JSON en tiempo
+            real. Introduce el contenido en el área de entrada y selecciona el
+            formato de salida deseado.
+          </p>
+          <fieldset>
+            <legend>Entrada (JSON o YAML)</legend>
+            <textarea
+              id="inputArea"
+              placeholder="Introduce JSON o YAML aquí..."
+            ></textarea>
+          </fieldset>
           <button id="convertToYAML">Convertir a YAML</button>
-          <br />
           <button id="convertToJSON">Convertir a JSON</button>
-        </div>
-        <div class="column">
-          <h3>Resultado</h3>
-          <textarea id="outputArea" placeholder="Resultado aquí..."></textarea>
-        </div>
+          <fieldset>
+            <legend>Resultado</legend>
+            <textarea
+              id="outputArea"
+              placeholder="Resultado aquí..."
+            ></textarea>
+          </fieldset>
+        </fieldset>
       </div>
-    </main> 
+    </main>
     <footer>
-      <p>© 2024 Mi Negocio. Todos los derechos reservados.</p>
+      © 2024 Mi Negocio. Todos los derechos reservados.
     </footer>
     <script src="script.js"></script>
   </body>
